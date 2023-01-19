@@ -1,18 +1,71 @@
 *{
-    background-color: lightcoral;
-    margin: 0;
+    background-color: white;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
-.title{
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+h2{
+    color: lightcoral;
     text-align: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
 }
 
-.scritta{
-    
+p{
+    text-align: center;
+    padding: 35px;
 }
 
 .container{
-    
+    padding:20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.box{
+    border: 2px solid black;
+    color: white;
+    width: calc(100% /3 - 20px);        
+    float: left;
+    margin: 10px;
+}
+
+.img{
+    float: left;
+    height: 75px;
+    width: 30%;
+    display: block;
+}
+
+.clearfix::after{
+    content:'' ;
+    display: block;
+    clear: both;
+}
+
+.name{
+    float: right;
+    width: 70%;
+    background-color: black;
+}
+
+.role{
+    display: block;
+    float: right;
+    width: 70%;
+    padding: 7px 0px;
+    background-color: black;
+}
+
+.email{
+    float: right;
+    width: 70%;
+    color: skyblue;
+    background-color: black;   
+}   
